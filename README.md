@@ -32,3 +32,30 @@ This test case is not parsed correctly, so this should not be used anyway:
 	<li>hb</li>
 </ul>
 ```
+
+Compare to this Python script:
+
+```python
+import markdown
+
+if __name__ == '__main__':
+    inp = """
+[TOC]
+#### ha
+# hb
+    """
+    print(markdown.markdown(inp, extensions=['toc', 'tables'])
+```
+
+Which outputs:
+
+```
+<div class="toc">
+<ul>
+<li><a href="#ha">ha</a></li>
+<li><a href="#hb">hb</a></li>
+</ul>
+</div>
+<h4 id="ha">ha</h4>
+<h1 id="hb">hb</h1>
+```
