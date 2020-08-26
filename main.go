@@ -124,6 +124,17 @@ const testData = `
 	</ul>
 	<li>hc</li>
 </ul>
+
+---
+
+#### ha
+# hb
+{
+<ul>
+	<li>ha</li>
+	<li>hb</li>
+</ul>
+
 `
 
 func generateTableOfContentsHtmlTags(in string) string {
