@@ -1,0 +1,1 @@
+# go-generate-toc-from-markdown-stub
