@@ -18,3 +18,17 @@ stepped as here:
 The initial [Python-Markdown](https://github.com/Python-Markdown/markdown) implementation
 I used did not exhibit this behavior, so I prematurely coded this basic implementation for the library 
 before realizing the easy solution of just rewriting my markdown files.
+
+## Unfinished implementation
+
+This test case is not parsed correctly, so this should not be used anyway:
+
+```md
+#### ha
+# hb
+{
+<ul>
+	<li>ha</li>
+	<li>hb</li>
+</ul>
+```
