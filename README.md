@@ -44,7 +44,7 @@ if __name__ == '__main__':
 #### ha
 # hb
     """
-    print(markdown.markdown(inp, extensions=['toc', 'tables'])
+    print(markdown.markdown(inp, extensions=['toc'])
 ```
 
 Which outputs:
